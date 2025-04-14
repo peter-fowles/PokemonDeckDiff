@@ -177,13 +177,13 @@ class Deck:
         return result
     
     def diff(self, other):
-        diff_1 = self - other
+        difference = self - other
         output = []
         output.append(colored(f'-{self.get_name()}', 'red'))
         output.append(colored(f'+{other.get_name()}', 'green'))
         output.append('')
         total_diff = 0
-        for category_name, cards in diff_1.items():
+        for category_name, cards in difference.items():
             removed_cards = []
             added_cards = []
             category_removed = 0
