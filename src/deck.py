@@ -50,11 +50,15 @@ class Deck:
                                 self.__pokemon[card] = 0
                             self.__pokemon[card] += 1
                             self.__num_pokemon += 1
+                            if self.__pokemon[card] > 4:
+                                raise Warning(f'There are more than 4 copies of {card} in this deck!')
                         case 'Trainer':
                             if card not in self.__trainers:
                                 self.__trainers[card] = 0
                             self.__trainers[card] += 1
                             self.__num_trainers += 1
+                            if self.__trainers[card] > 4:
+                                raise Warning(f'There are more than 4 copies of {card} in this deck!')
                         case 'Energy':
                             if card not in self.__energy:
                                 self.__energy[card] = 0
