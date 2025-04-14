@@ -128,7 +128,7 @@ This indicates that 14 cards were replaced in deck 1 to get to deck 2.
 # Other Notes
 
 - This program ignores the rarity of all cards. If the set number for a card on the output is different than expected, this is normal behavior. 
-- This program ignores the set IDs and rarities of all basic energy cards. If basic energy are listed from a different set or with different rarity than expected, this is normal behavior. 
+- This program ignores the set IDs and rarities of all basic energy and trainer cards. If a basic energy or trainer card is listed from a different set or with different rarity than expected, this is normal behavior. 
 
 # Reporting Bugs
 

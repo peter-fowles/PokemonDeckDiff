@@ -30,7 +30,7 @@ class PokemonCard:
     def __eq__(self, other):
         result = True
         result &= self.get_type() == other.get_type()
-        if (self.get_name() not in BASIC_ENERGY):
+        if self.get_type() != 'Pokémon':
             result &= self.get_set() == other.get_set()
         result &= self.get_name() == other.get_name()
         return result
