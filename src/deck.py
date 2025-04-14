@@ -20,7 +20,7 @@ class Deck:
         self.parse_file(deck_file)
 
     def parse_file(self, deck_file):
-        f = open(deck_file, 'r')
+        f = open(deck_file, mode='r', encoding='utf-8')
         category_count = 0
         total_cards = 0
         curr_section = ''
